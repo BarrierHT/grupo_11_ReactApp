@@ -2,6 +2,8 @@ import Topbar from "./Topbar";
 import ContentRowTop from "./ContentRowTop";
 import Footer from "./Footer";
 import Genres from "./Genres";
+import Tables from "./Tables";
+
 import LastMovie from "./LastMovie";
 
 function ContentWrapper (props){
@@ -23,6 +25,10 @@ function ContentWrapper (props){
           {/* End content row last movie in Data Base */}
           {/* Genres in DB */}
           <Genres/>
+
+            {/* End content row last movie in Data Base */}
+          {/* Genres in DB */}
+          <Tables/>
         </div>
           </div>
           {/* End of MainContent */}

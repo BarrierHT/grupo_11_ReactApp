@@ -5,7 +5,7 @@ function ContentRowTop() {
   const [dataBoxes, setDataBoxes] = useState([]);
 
   useEffect(() => {
-    // SimulaciÃ³n de una API, reemplaza la URL con tu endpoint real
+
     const apiUrl = 'http://localhost:3000/api/';
 
     const fetchData = async () => {

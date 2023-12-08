@@ -9,6 +9,8 @@ import ContentRowTop from './components/ContentRowTop';
 import Topbar from './components/Topbar';
 import LastMovie from './components/LastMovie';
 import Genres from './components/Genres';
+import Tables from './components/Tables';
+
 import Movies from './components/Movies';
 import Form from './components/Form';
 
@@ -39,6 +41,8 @@ function App() {
           <Route path='/' exact element={<ContentWrapper/>} />
           <Route path='/last-movie/:id' exact element={<LastMovie/>} />
           <Route path='/pages' exact element={<Genres/>} />
+          <Route path='/tables' exact element={<Tables/>} />
+
         </Routes>
 
 

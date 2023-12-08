@@ -47,7 +47,7 @@ function Sidebar() {
                     </a> */}
                     <Link to='/'style={linkColor}>
                         <i className="fas fa-fw fa-tachometer-alt"/>
-                        <span >Dashboard - DH movies</span>
+                        <span >Dashboard - DH</span>
                     </Link>
                 </li>
                 {/* Divider */}
@@ -62,7 +62,7 @@ function Sidebar() {
                     </Link> */}
                     <Link to={'/pages'}  style={linkColor}>
                         <i className="fas fa-fw fa-folder" />
-                            <span >Pages</span>
+                            <span >Todas las categorias</span>
                     </Link>
                     {/* <a className="nav-link collapsed" href="/pages">
                         <i className="fas fa-fw fa-folder" />
@@ -77,7 +77,7 @@ function Sidebar() {
                     </a> */}
                     <Link to='/last-movie/23' style={linkColor}>
                         <i className="fas fa-fw fa-chart-area" />
-                        <span>Last Movie</span>
+                        <span>Último Usuario</span>
                     </Link>
                 </li>
                 {/* Nav Item - Tables */}
@@ -88,7 +88,7 @@ function Sidebar() {
                     </a> */}
                     <Link to='tables' style={linkColor}>
                         <i className="fas fa-fw fa-table" />
-                        <span>Tables</span>
+                        <span>Listado de Productos</span>
                     </Link>
                 </li>
                 {/* Divider */}
