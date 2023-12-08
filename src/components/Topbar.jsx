@@ -14,8 +14,9 @@ function Topbar() {
       </button>
 
       {/* Topbar Navbar */}
-      <ul className="navbar-nav ml-auto">
-        {/* Nav Item - Alerts */}
+     
+      {/* <ul className="navbar-nav ml-auto">
+        {/* Nav Item - Alerts }
         <li className="nav-item dropdown no-arrow mx-1">
           <a
             className="nav-link dropdown-toggle"
@@ -23,11 +24,11 @@ function Topbar() {
             id="alertsDropdown"
           >
             <i className="fas fa-bell fa-fw" />
-            {/* Counter - Alerts */}
+            {/* Counter - Alerts }
             <span className="badge badge-danger badge-counter">3+</span>
           </a>
         </li>
-        {/* Nav Item - Messages */}
+        {/* Nav Item - Messages }
         <li className="nav-item dropdown no-arrow mx-1">
           <a
             className="nav-link dropdown-toggle"
@@ -35,12 +36,12 @@ function Topbar() {
             id="messagesDropdown"
           >
             <i className="fas fa-envelope fa-fw" />
-            {/* Counter - Messages */}
+            {/* Counter - Messages }
             <span className="badge badge-danger badge-counter">7</span>
           </a>
         </li>
         <div className="topbar-divider d-none d-sm-block" />
-        {/* Nav Item - User Information */}
+        {/* Nav Item - User Information }
         <li className="nav-item dropdown no-arrow">
           <a
             className="nav-link dropdown-toggle"
@@ -58,7 +59,8 @@ function Topbar() {
             />
           </a>
         </li>
-      </ul>
+      </ul> */}
+    
     </nav>
   )
 }
