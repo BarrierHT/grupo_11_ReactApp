@@ -27,16 +27,26 @@ function LastUser(props) {
         const usersResponse = await fetch(apiUrl + 'users');
         const userData = await usersResponse.json();
         let lastUser = 0;
-        // Asegúrate de que `userData.users` es un array
-        if (Array.isArray(userData.users) && userData.users.length > 0) {
+      
+        if (userData.users.length > 0) {
           lastUser = userData.users[userData.users.length - 1];
-          console.log(userData, lastUser);
+          getUser(apiUrl + 'users/' + lastUser.id).then((userData) => setUser(userData));
         } else {
           console.error('No se encontraron usuarios o el formato de datos es incorrecto.');
+          getUser(apiUrl + 'users/' + lastUser.id).then((userData) => {
+            userData = {
+              id: 'No existe',
+              name: 'No existe',
+              last_name: 'No existe',
+              email: 'No existe',
+              rol: 'No existe',
+              user_image: 'http://localhost:3000' + '/img/404.png',
+            }
+            setUser(userData)
+          });  
         }
-        
 
-        getUser(apiUrl + 'users/' + lastUser.id).then((userData) => setUser(userData));
+     
       }
       catch (error) {
         console.error('Error fetching data:', error);
