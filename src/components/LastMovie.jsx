@@ -16,29 +16,26 @@ function LastUser(props) {
   };
 
   useEffect(() => {
-
     let lastUser = 0;
     const apiUrl = 'http://localhost:3000/api/';
 
-
     const fetchData = async () => {
-    
       try {
         const usersResponse = await fetch(apiUrl + 'users');
         const userData = await usersResponse.json();
         let lastUser = userData.count;
 
-        //console.log(userData, lastUser);
+        console.log(userData, lastUser);
 
-        getUser(apiUrl + 'users/' + lastUser).then((userData) => setUser(userData));
-      }
-      catch (error) {
+        getUser(apiUrl + 'users/' + lastUser).then((userData) =>
+          setUser(userData),
+        );
+      } catch (error) {
         console.error('Error fetching data:', error);
       }
-    }
+    };
 
     fetchData();
-    
   }, []);
 
   return (
@@ -52,13 +49,14 @@ function LastUser(props) {
           <div className="text-center">
             <img
               className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-              style={{ width: "40rem" }}
+              style={{ width: '40rem' }}
               src={user.user_image}
               alt={`${user.name} ${user.last_name}`}
             />
           </div>
           <p>
-            <strong>Nombre completo:</strong> {user.name} {user.last_name} <br />
+            <strong>Nombre completo:</strong> {user.name} {user.last_name}{' '}
+            <br />
             <strong>Email:</strong> {user.email} <br />
             <strong>Rol:</strong> {user.rol}
           </p>
