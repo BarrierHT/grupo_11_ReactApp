@@ -12,7 +12,7 @@ import Genres from './components/Genres';
 import Tables from './components/Tables';
 
 import Movies from './components/Movies';
-import Form from './components/Form';
+
 
 // Switch ---> Routes
 import { Routes, Route } from 'react-router-dom';

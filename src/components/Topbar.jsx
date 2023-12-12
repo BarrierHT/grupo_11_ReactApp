@@ -1,4 +1,4 @@
-import walke from '../assets/images/jordan-walke.png';
+import walke from '../assets/images/digital.png';
 
 
 
@@ -15,9 +15,9 @@ function Topbar() {
 
       {/* Topbar Navbar */}
      
-      {/* <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto">
         {/* Nav Item - Alerts }
-        <li className="nav-item dropdown no-arrow mx-1">
+       /* <li className="nav-item dropdown no-arrow mx-1">
           <a
             className="nav-link dropdown-toggle"
             href="/"
@@ -40,8 +40,9 @@ function Topbar() {
             <span className="badge badge-danger badge-counter">7</span>
           </a>
         </li>
+        */}
         <div className="topbar-divider d-none d-sm-block" />
-        {/* Nav Item - User Information }
+
         <li className="nav-item dropdown no-arrow">
           <a
             className="nav-link dropdown-toggle"
@@ -49,17 +50,17 @@ function Topbar() {
             id="userDropdown"
           >
             <span className="mr-2 d-none d-lg-inline text-gray-600 small">
-              Jordan Walke
+              Digital House
             </span>
             <img
               className="img-profile rounded-circle"
               src={walke}
-              alt="Jordan Walke - Creador de React"
+              alt="Digital House"
               width={60}
             />
           </a>
         </li>
-      </ul> */}
+      </ul> 
     
     </nav>
   )
